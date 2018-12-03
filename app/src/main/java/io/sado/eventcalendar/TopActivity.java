@@ -1,5 +1,6 @@
 package io.sado.eventcalendar;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ public class TopActivity extends AppCompatActivity {
     private Button prevButton, nextButton;
     private CalendarAdapter mCalendarAdapter;
     private GridView calendarGridView;
+    private Button buttonRegist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,5 +41,15 @@ public class TopActivity extends AppCompatActivity {
         mCalendarAdapter = new CalendarAdapter(this);
         calendarGridView.setAdapter(mCalendarAdapter);
         titleText.setText(mCalendarAdapter.getTitle());
+
+        // 登録ボタン
+        buttonRegist = (Button) findViewById(R.id.regist_button);
+        buttonRegist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplication(), RegistActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

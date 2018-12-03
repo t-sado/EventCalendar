@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -22,7 +21,7 @@ public class CalendarAdapter extends BaseAdapter {
     private DateManager mDateManager;
     private LayoutInflater mLayoutInflater;
 
-    //カスタムセルを拡張したらここでWigetを定義
+    //カスタムセルを拡張したらここでWidgetを定義
     private static class ViewHolder {
         public TextView dateText;
     }
@@ -63,7 +62,7 @@ public class CalendarAdapter extends BaseAdapter {
         //当月以外のセルをグレーアウト
         if (mDateManager.isCurrentMonth(dateArray.get(position))){
             convertView.setBackgroundColor(Color.WHITE);
-        }else {
+        } else {
             convertView.setBackgroundColor(Color.LTGRAY);
         }
 

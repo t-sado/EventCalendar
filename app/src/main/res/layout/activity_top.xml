@@ -127,7 +127,7 @@
     <GridView
         android:id="@+id/calendarGridView"
         android:layout_width="368dp"
-        android:layout_height="376dp"
+        android:layout_height="378dp"
         android:layout_marginTop="8dp"
         android:layout_weight="15"
         android:horizontalSpacing="1dp"
@@ -138,5 +138,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout"></GridView>
+
+    <Button
+        android:id="@+id/regist_button"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginLeft="288dp"
+        android:background="@android:color/holo_green_light"
+        android:text="+"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarGridView" />
 
 </android.support.constraint.ConstraintLayout>

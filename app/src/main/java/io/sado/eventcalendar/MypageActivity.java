@@ -1,4 +1,4 @@
-package com.example.yunki.myapplication;
+package io.sado.eventcalendar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

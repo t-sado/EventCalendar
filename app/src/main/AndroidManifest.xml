@@ -30,6 +30,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".InfoMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.REGIST" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InfoSubActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.REGIST" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MypageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.REGIST" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

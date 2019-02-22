@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package io.sado.eventcalendar;
 
 import android.content.Intent;
 import android.os.Bundle;

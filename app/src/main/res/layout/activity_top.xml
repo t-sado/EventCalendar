@@ -142,13 +142,24 @@
     <Button
         android:id="@+id/regist_button"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_marginStart="288dp"
-        android:layout_marginLeft="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:background="@android:color/holo_green_light"
         android:text="+"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarGridView" />
+
+    <Button
+        android:id="@+id/mypage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="510dp"
+        android:text="マイページ"
+        app:layout_constraintStart_toEndOf="@+id/regist_button"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

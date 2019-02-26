@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClicked(View v) {
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(getApplication(), TopActivity.class);
         startActivity(intent);
     }
 }

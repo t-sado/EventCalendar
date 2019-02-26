@@ -14,6 +14,7 @@ public class TopActivity extends AppCompatActivity {
     private CalendarAdapter mCalendarAdapter;
     private GridView calendarGridView;
     private Button buttonRegist;
+    private Button myPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,15 @@ public class TopActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplication(), RegistActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        myPage = (Button) findViewById(R.id.mypage);
+        myPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplication(), MypageActivity.class);
                 startActivity(intent);
             }
         });
